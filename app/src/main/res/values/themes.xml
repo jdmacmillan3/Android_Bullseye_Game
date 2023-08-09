@@ -1,9 +1,32 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.Bullseye" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Theme.Bullseye" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/red_accent</item>
+        <item name="colorPrimaryVariant">@color/red_accent</item>
+        <item name="colorOnPrimary">@color/white</item>
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
     </style>
 
-    <style name="Theme.Bullseye" parent="Base.Theme.Bullseye" />
+    <style name="Theme.Bullseye.NoActionBar.FullScreen" parent="@style/Theme.Bullseye">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="game_stats_text">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="instruction_text">
+        <item name="android:letterSpacing">0.2</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="big_text">
+        <item name="android:textSize">32sp</item>
+    </style>
+
 </resources>
